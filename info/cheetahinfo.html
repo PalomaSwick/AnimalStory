@@ -1,0 +1,59 @@
+<head>
+  <title>Cheetahs</title>
+</head>
+
+<body>
+  <style>
+    .cheetahs {
+      background-color: palegoldenrod;
+    }
+  </style>
+  <div class="cheetahs">
+    <h1 style="color:yellow">Cheetahas!</h1>
+    <p>
+      Appearance:Cheetahs are golden with black spots.They have black lines
+      across their face that block the sunlight.Cheetahs have a flexible
+      backbone and long legs so they are super fast
+    </p>
+    <p>Predators: Lions hunt cheetahs. They also steal cheetahs prey</p>
+    <p>
+      Prey: Cheetahs favorite prey is gazelle.Since gazelle run fast cheetahs
+      evolved to be super fast
+    </p>
+    <p>
+      Habitat: Cheetahs live in the savanna which is a perfect place for
+      sprinting.It has miles of grass with very few trees
+    </p>
+    <p>
+      Camoflauge: Cheetah cubs have backs that look like badgurs fur because
+      lions are scared of badgurs so lions will leave them alone when there
+      napping.
+    </p>
+    <p>Sound:Cheetahs make a bird like chirp to communicate to their young</p>
+  </div>
+  <button Onclick="transLate()" id="translator">Cheetah translator</button>
+  <script>
+    function transLate() {
+      var trans = prompt("What is your cheetah doing");
+
+      if (trans == "chirping") {
+        alert("The cheetah is calling or communicating to her cub");
+      } else if (trans == "growling") {
+        alert(
+          "if the cheetah is saying leave me alone or get off my territory or if it's a female she might be saying leave my cub alone."
+        );
+      } else if (trans == eating) {
+        alert("This cheetah is hungry");
+      } else {
+        var rand = Math.floor(Math.random() * 3 + 1);
+        if (rand == 1) {
+          alert("This cheetah is saying I want to nap");
+        } else if (rand == 2) {
+          alert("This cheetah is saying I love freedom");
+        } else if (rand == 3) {
+          alert("This cheetah is saying she is hungry");
+        }
+      }
+    }
+  </script>
+</body>

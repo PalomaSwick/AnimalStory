@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <h1>Button Hide Test</h1>
+    <button onclick="HideMyButton()" id="hideButton">Hide Me Paloma</button>
+    <button onclick="GetRandomNumber()" id="randomButton">Random Number</button>
+  </body>
+  <!-- <script src="./learnstuff.js"></script> -->
+  <script type="text/javascript">
+    function HideMyButton() {
+      document.getElementById("hideButton").style.visibility = "hidden";
+    }
+
+    function GetRandomNumber() {
+      var answer = prompt("What is your cat doing");
+
+      var rand = Math.floor(Math.random() * 3 + 1);
+
+      if (rand == 1) {
+        alert("Cat says hi");
+      } else if (rand == 2) {
+        alert("cat is running");
+      } else if (rand == 3) {
+        alert("cat is jumping");
+      } else {
+        alert("we dont know what the cat is doing");
+      }
+    }
+  </script>
+</html>
